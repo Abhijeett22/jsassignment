@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="ShowLiberyData">
+
+    </table>
+    <script>
+         const liberydata = [
+            {
+                author: 'Bill Gates', 
+                title: 'The Road Ahead', 
+                readingStatus: true
+            },
+            {
+                author: 'Steve Jobs', 
+                title: 'Walter Isaacson', 
+                readingStatus: true
+            },
+            {
+                author: 'Suzanne Collins', 
+                title: 'Mockingjay: The Final BooK of The Hunger Games', 
+                readingStatus: false
+            }];
+
+            function liberyData() {
+                for (let i = 0; i < liberydata.length; i++){
+                document.getElementById("ShowLiberyData").innerHTML += `<tr><th>Author</th><td>${liberydata[i].author}</td></tr><tr><th>Title</th><td>${liberydata[i].title}</td></tr><tr><th>Author</th><td>${liberydata[i].author}</td></tr>`
+                }
+            }
+
+            liberyData()
+
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="ShowLiberyData">
+
+    </table>
+    <script>
+        let reversefunData = 32243; 
+        let stringConvertNumber =  reversefunData.toString();
+        let reverseData = stringConvertNumber.split("");
+        let reverseArray = [];
+        let reverseDataLen = reverseData.length;
+        for(let data of reverseData){
+            let showData = '';
+            showData = reverseData[reverseDataLen - 1];
+            reverseArray.push(showData);
+            showData = '';
+            reverseDataLen = reverseDataLen - 1;
+        }
+
+        console.log(reverseArray)
+
+        
+    </script>
+</body>
+</html>

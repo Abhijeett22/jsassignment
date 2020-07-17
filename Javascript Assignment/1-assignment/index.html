@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onresize="onresizeWindowHeightWidth()">
+    <table id="ShowLiberyData">
+
+    </table>
+    <script>
+ 
+        const arrayvalue1 = [1,0,2,3,4];
+        const arrayvalue2 = [3,5,6,7,8,13];
+         var arraytotal = [],undefined;
+  
+        function mergeArray(){
+
+          for(let i=0; i<arguments.length; i++){
+                for(let j=0; j<arguments[i].length; j++){
+                    arraytotal[j]  = (arraytotal[j] == undefined ? 0: arraytotal[j]) + arguments[i][j];
+                }
+            }
+            return arraytotal;
+            }
+  
+        console.log(mergeArray(arrayvalue1,arrayvalue2));
+    
+        
+    </script>
+</body>
+</html>
